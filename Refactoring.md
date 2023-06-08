@@ -10,4 +10,11 @@ You will be graded on the exhaustiveness and quality of your unit tests, the dep
 
 ## Your Explanation Here
 
-- `sha3-512` hash will return a deterministic output for any given input
+- Added unit test first to achieve 100% coverage for dpk.js
+- The refactored `deterministicPartitionKey` takes a second argument to override properties like `TRIVIAL_PARTITION_KEY` and `MAX_PARTITION_KEY_LENGTH`. The method will pick default values if no values are provided
+- Exit the method early if its already determined the output would be `TRIVIAL_PARTITION_KEY`
+- Extract the method to generate hash in a separate function as its being reused multiple times
+- Simplify branching to make the code easier to read
+
+<img src="Coverage.png" />
+
