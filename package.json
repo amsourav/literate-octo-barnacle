@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": " ",
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html"
+    ]
+  },
   "scripts": {
     "test": "jest",
     "start": "node index.js"
